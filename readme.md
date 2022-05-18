@@ -1,12 +1,9 @@
 # Running Atlantis
 Atlantis is a tools to run terraform automation.
 
-To run atlantis inside heroku dynos
+To run atlantis locally
 ```shell
-atlantis server \
---atlantis-url="$URL" \
---gh-user="$USERNAME" \
---gh-token="$TOKEN" \
---gh-webhook-secret="$SECRET" \
---repo-allowlist="$REPO_ALLOWLIST"
+docker run -p 4141:4141 \ 
+    atlantis server \
+    --config /usr/local/bin/config.yml
 ```

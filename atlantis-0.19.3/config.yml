@@ -1,0 +1,4 @@
+gh-user: "${ATLANTIS_GH_USER}" 
+gh-token: "${ATLANTIS_GH_TOKEN}"
+gh-wehbook-secret: "${ATLANTIS_GH_WEBHOOK_SECRET}"
+repo-allowlist: "${ATLANTIS_REPO_ALLOWLIST}"
